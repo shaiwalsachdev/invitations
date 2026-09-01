@@ -1,0 +1,200 @@
+:root {
+  /* Shri Anandpur Green Theme */
+  --color-wine: #3CB371; /* Medium Sea Green (Much lighter) */
+  --color-gold: #D4AF37; /* Vibrant Gold / Yellow */
+  --color-ivory: #FDFBF7; /* Creamy background */
+  --color-light-gold: #F4E4BA; /* Soft light gold */
+  --color-dark-brown: #2E8B57;
+  --color-text-dark: #0A3B29;
+  --color-text-accent: #5C4008;
+  --color-red-accent: #8B0000; /* Sea Green for gradient contrast */
+  --color-saffron: #FF9933; /* Adding saffron/orange color referenced */
+
+  --font-heading: 'Cinzel', serif;
+  --font-body: 'Outfit', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-wine);
+  color: var(--color-dark-brown);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 100 100" fill-opacity="0.03" fill="%23D4AF37"><path d="M50 0 C55 20, 80 45, 100 50 C80 55, 55 80, 50 100 C45 80, 20 55, 0 50 C20 45, 45 20, 50 0 Z M50 15 C52 35, 65 48, 85 50 C65 52, 52 65, 50 85 C48 65, 35 52, 15 50 C35 48, 48 35, 50 15 Z"/></svg>');
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Typography Utilities */
+h1, h2, h3, h4, h5, h6, .font-serif {
+  font-family: var(--font-heading);
+  font-weight: 400;
+}
+
+.text-gold { color: var(--color-text-accent); }
+.text-wine { color: var(--color-text-dark); }
+.bg-wine { background-color: var(--color-text-dark); }
+.bg-ivory { background-color: var(--color-wine); }
+
+/* Layout Utilities */
+.section-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  position: relative;
+  z-index: 10;
+}
+
+/* Golden Divider */
+.ornamental-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  color: var(--color-text-accent);
+  opacity: 0.8;
+}
+
+.ornamental-divider::before,
+.ornamental-divider::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+/* Glassmorphism Button */
+.luxury-button {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  color: var(--color-dark-brown);
+  padding: 1rem 2.5rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(5px);
+  margin-top: 2rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.luxury-button:hover {
+  background: rgba(212, 175, 55, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Particles */
+.particle-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.petal {
+  position: absolute;
+  top: -50px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23D4AF37"><path d="M12 2C8.69 2 6 4.69 6 8c0 3.31 2.69 6 6 6s6-2.69 6-6c0-3.31-2.69-6-6-6zm0 12c-4.42 0-8 3.58-8 8h16c0-4.42-3.58-8-8-8z"/></svg>') no-repeat center center;
+  background-size: contain;
+  opacity: 0.5;
+  filter: hue-rotate(-20deg) saturate(1.5);
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-50px) rotate(0deg) scale(0.8);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg) scale(1.2);
+    opacity: 0;
+  }
+}
+
+/* Revolving Sun */
+.sun-container {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  z-index: 5;
+}
+
+.revolving-sun {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: revolve 30s linear infinite;
+}
+
+.sun-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle, #FFE484 0%, #FF9933 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 20px 5px rgba(255, 153, 51, 0.4);
+  z-index: 2;
+}
+
+.sun-ray {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 6px;
+  height: 100%;
+  margin-left: -3px;
+  background: linear-gradient(to bottom, #FF9933 0%, transparent 30%, transparent 70%, #FF9933 100%);
+  z-index: 1;
+}
+
+@keyframes revolve {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
