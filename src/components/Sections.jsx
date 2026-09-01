@@ -120,7 +120,7 @@ export const Hero = () => {
             boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
           }}>
             <div style={{ fontSize: '2.5rem', marginBottom: '1rem', letterSpacing: '10px' }}>ॐ 🪔 🥁</div>
-            <h4 className="font-serif" style={{ color: 'var(--color-text-dark)', fontSize: '2rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.1)', paddingBottom: '1rem' }}>Satsang, Kirtan & Blessings</h4>
+            <h4 className="font-serif" style={{ color: 'var(--color-text-dark)', fontSize: '2rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.1)', paddingBottom: '1rem' }}>Kirtan, Satsang & Blessing</h4>
             <p style={{ color: 'var(--color-text-accent)', fontWeight: 'bold', letterSpacing: '0.15em', fontSize: '1.3rem', marginBottom: '1.5rem' }}>4:30 PM – 6:30 PM</p>
             <p style={{ color: 'var(--color-text-dark)', fontSize: '1.1rem', lineHeight: '1.6', opacity: 0.9 }}>Join us for devotional prayers, uplifting kirtan, and to receive the divine blessings of the Almighty and our Satguru.</p>
           </div>
