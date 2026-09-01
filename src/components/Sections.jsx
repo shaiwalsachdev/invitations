@@ -108,21 +108,8 @@ export const Hero = () => {
         
         <motion.div variants={fadeInUp} className="ornamental-divider" style={{ width: '100px', margin: '3rem auto 2rem', opacity: 0.3 }}></motion.div>
 
-        {/* Details appended directly to the first page */}
-        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(1.5rem, 4vw, 2rem)', marginBottom: '0.5rem', opacity: 0.9 }}>
-          At
-        </motion.p>
-        <motion.h3 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '1rem', textShadow: '2px 4px 10px rgba(0,0,0,0.1)' }}>
-          Shri Anandpur Satsang Bhawan
-        </motion.h3>
-        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontSize: '1.2rem', lineHeight: '1.8', opacity: 0.9, letterSpacing: '0.05em', marginBottom: '3rem' }}>
-          9C, Block-A, Hind Nagar<br/>
-          Near Komal Ice Cream<br/>
-          Opposite Kailash Palace, LDA Colony<br/>
-          <strong style={{ fontSize: '1.6rem', letterSpacing: '0.2em', display: 'block', marginTop: '1rem', color: 'var(--color-text-accent)' }}>LUCKNOW - 226012</strong>
-        </motion.p>
-
-        <motion.div variants={fadeInUp} style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', marginBottom: '4rem', padding: '0 1rem' }}>
+        {/* Events Container */}
+        <motion.div variants={fadeInUp} style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', marginBottom: '3rem', padding: '0 1rem' }}>
           
           <div style={{ 
             flex: '1 1 300px', 
@@ -133,9 +120,9 @@ export const Hero = () => {
             boxShadow: '0 8px 25px rgba(0,0,0,0.15)'
           }}>
             <div style={{ fontSize: '2.5rem', marginBottom: '1rem', letterSpacing: '10px' }}>ॐ 🪔 🥁</div>
-            <h4 className="font-serif" style={{ color: 'var(--color-text-dark)', fontSize: '2rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.1)', paddingBottom: '1rem' }}>Satsang & Kirtan</h4>
+            <h4 className="font-serif" style={{ color: 'var(--color-text-dark)', fontSize: '2rem', marginBottom: '1rem', borderBottom: '1px solid rgba(0,0,0,0.1)', paddingBottom: '1rem' }}>Satsang, Kirtan & Blessings</h4>
             <p style={{ color: 'var(--color-text-accent)', fontWeight: 'bold', letterSpacing: '0.15em', fontSize: '1.3rem', marginBottom: '1.5rem' }}>4:30 PM – 6:30 PM</p>
-            <p style={{ color: 'var(--color-text-dark)', fontSize: '1.1rem', lineHeight: '1.6', opacity: 0.9 }}>Join us in devotional prayers, kirtan, and hymns to seek the divine blessings of the Almighty and our Satguru.</p>
+            <p style={{ color: 'var(--color-text-dark)', fontSize: '1.1rem', lineHeight: '1.6', opacity: 0.9 }}>Join us for devotional prayers, uplifting kirtan, and to receive the divine blessings of the Almighty and our Satguru.</p>
           </div>
           
           <div style={{ 
@@ -154,14 +141,28 @@ export const Hero = () => {
 
         </motion.div>
 
+        {/* Venue Details appended directly to the first page */}
+        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(1.5rem, 4vw, 2rem)', marginBottom: '0.5rem', opacity: 0.9 }}>
+          At
+        </motion.p>
+        <motion.h3 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '1rem', textShadow: '2px 4px 10px rgba(0,0,0,0.1)' }}>
+          Shri Anandpur Satsang Bhawan
+        </motion.h3>
+        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontSize: '1.2rem', lineHeight: '1.8', opacity: 0.9, letterSpacing: '0.05em', marginBottom: '3rem' }}>
+          9C, Block-A, Hind Nagar<br/>
+          Near Komal Ice Cream<br/>
+          Opposite Kailash Palace, LDA Colony<br/>
+          Lucknow - 226012
+        </motion.p>
+
         {/* Maps Container */}
-        <motion.div variants={fadeInUp} style={{ display: 'flex', flexDirection: 'column', gap: '2rem', width: '100%', maxWidth: '800px', margin: '0 auto 4rem' }}>
+        <motion.div variants={fadeInUp} style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', width: '100%', margin: '0 auto 4rem' }}>
           {/* Main Map */}
-          <div style={{ width: '100%', borderRadius: '15px', overflow: 'hidden', border: '2px solid rgba(212,175,55,0.4)' }}>
+          <div style={{ flex: '1 1 300px', borderRadius: '15px', overflow: 'hidden', border: '2px solid rgba(212,175,55,0.4)' }}>
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56987.9877977982!2d80.8202707486328!3d26.78426219999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c0f69b640d691%3A0x1a19f03d21bcf90f!2sShri%20Anandpur%20Satsang%20Aashram%20(Madhur%20Satsang%20Dham)!5e0!3m2!1sen!2sin!4v1788282861467!5m2!1sen!2sin" 
               width="100%" 
-              height="450" 
+              height="225" 
               style={{ border: 0 }} 
               allowFullScreen="" 
               loading="lazy" 
@@ -170,11 +171,11 @@ export const Hero = () => {
           </div>
 
           {/* Street View */}
-          <div style={{ width: '100%', borderRadius: '15px', overflow: 'hidden', border: '2px solid rgba(212,175,55,0.4)' }}>
+          <div style={{ flex: '1 1 300px', borderRadius: '15px', overflow: 'hidden', border: '2px solid rgba(212,175,55,0.4)' }}>
             <iframe 
               src="https://www.google.com/maps/embed?pb=!4v1689264177114!6m8!1m7!1sJAMQDG48jDNRO82Dv8m4ag!2m2!1d26.7843298!2d80.8964091!3f118.85!4f-3.4!5f0.7820865974627469" 
               width="100%" 
-              height="450" 
+              height="225" 
               style={{ border: 0 }} 
               allowFullScreen="" 
               loading="lazy" 
@@ -185,26 +186,29 @@ export const Hero = () => {
 
         {/* RSVP Block */}
         <motion.div variants={fadeInUp} style={{ 
-          padding: 'clamp(2rem, 5vw, 3rem)', 
-          background: 'rgba(253, 251, 247, 0.9)', /* High opacity Ivory for strong contrast */
-          borderRadius: '20px', 
-          border: '2px solid var(--color-text-accent)', 
-          maxWidth: '600px', 
+          padding: '1.5rem', 
+          background: 'rgba(253, 251, 247, 0.9)', 
+          borderRadius: '15px', 
+          border: '1px solid var(--color-text-accent)', 
+          maxWidth: '450px', 
           margin: '0 auto',
-          boxShadow: '0 10px 30px rgba(0,0,0,0.15)'
+          boxShadow: '0 5px 15px rgba(0,0,0,0.1)',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '1rem'
         }}>
-          <h4 className="font-serif text-wine" style={{ fontSize: '1.5rem', marginBottom: '1rem', fontStyle: 'italic', color: 'var(--color-text-dark)' }}>With Best Compliments From</h4>
-          <h3 className="font-serif text-gold" style={{ fontSize: '2.5rem', marginBottom: '1rem', color: 'var(--color-text-accent)' }}>Sachdev Family</h3>
+          <div>
+            <h4 className="font-serif text-wine" style={{ fontSize: '1.2rem', marginBottom: '0.2rem', color: 'var(--color-text-dark)' }}>With Best Compliments From</h4>
+            <h3 className="font-serif text-gold" style={{ fontSize: '1.8rem', margin: '0', color: 'var(--color-text-accent)' }}>Sachdev Family</h3>
+            <p style={{ fontSize: '0.95rem', lineHeight: '1.4', opacity: 0.9, marginTop: '0.5rem', color: 'var(--color-text-dark)' }}>
+              K-1/16, Ansal Nest, Ashiana, Lucknow - 226012
+            </p>
+          </div>
           
-          <p style={{ fontSize: '1.1rem', lineHeight: '1.8', opacity: 0.9, marginBottom: '2rem', letterSpacing: '0.05em', color: 'var(--color-text-dark)' }}>
-            K-1/16, Ansal Nest, Ashiana,<br/>
-            Lucknow - 226012
-          </p>
-          
-          <div className="ornamental-divider" style={{ width: '100px', margin: '0 auto 2rem', opacity: 0.3 }}></div>
-          
-          <p style={{ fontSize: '1.2rem', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '0.5rem', fontWeight: 600, color: 'var(--color-text-dark)' }}>RSVP</p>
-          <p style={{ fontSize: '1.2rem', opacity: 0.9, color: 'var(--color-text-dark)' }}>Kamal Sachdev: <strong>8052418822</strong></p>
+          <div style={{ borderTop: '1px solid rgba(212,175,55,0.3)', paddingTop: '1rem' }}>
+            <p style={{ fontSize: '1rem', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.2rem', fontWeight: 600, color: 'var(--color-text-dark)' }}>Contact</p>
+            <p style={{ fontSize: '1.1rem', opacity: 0.9, color: 'var(--color-text-dark)' }}>Kamal Sachdev: <strong style={{color: 'var(--color-red-accent)'}}>8052418822</strong></p>
+          </div>
         </motion.div>
 
       </motion.div>
