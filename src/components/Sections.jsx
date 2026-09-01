@@ -77,7 +77,7 @@ export const Hero = () => {
           Seeking the divine grace and your blessings,
         </motion.p>
         <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', marginBottom: '3rem', opacity: 0.9, fontSize: 'clamp(0.9rem, 3vw, 1.2rem)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
-          We cordially invite you to the wedding celebration of
+          We cordially invite you to the post wedding celebration of
         </motion.p>
         
         <motion.h1 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-red-accent)', fontSize: 'clamp(2.5rem, 6vw, 4rem)', lineHeight: '1', marginBottom: '0.5rem', textShadow: '2px 4px 10px rgba(0,0,0,0.3)' }}>
