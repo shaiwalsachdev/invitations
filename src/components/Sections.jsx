@@ -67,52 +67,59 @@ export const Hero = () => {
           style={{ width: '180px', height: 'auto', margin: '0 auto 2rem', display: 'block', filter: 'drop-shadow(0 5px 15px rgba(0,0,0,0.5)) brightness(1.2)' }} 
         />
         
-        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontSize: '2.5rem', letterSpacing: '0.05em', marginBottom: '2rem', fontWeight: 700, textAlign: 'center', width: '100%' }}>
+        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontSize: 'clamp(1.2rem, 4vw, 2rem)', letterSpacing: '0.05em', marginBottom: '2rem', fontWeight: 700, textAlign: 'center', width: '100%' }}>
           श्री सतगुरु देवाय नमः (S.S.D.N.)
         </motion.p>
         
         <motion.div variants={fadeInUp} className="ornamental-divider" style={{ width: '150px', margin: '0 auto 2rem', opacity: 0.5 }}></motion.div>
 
-        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', marginBottom: '1rem', opacity: 0.9, fontSize: '1.4rem' }}>
+        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', marginBottom: '1rem', opacity: 0.9, fontSize: 'clamp(1rem, 3.5vw, 1.4rem)' }}>
           Seeking the divine grace and your blessings,
         </motion.p>
-        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', marginBottom: '3rem', opacity: 0.9, fontSize: '1.2rem', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', marginBottom: '3rem', opacity: 0.9, fontSize: 'clamp(0.9rem, 3vw, 1.2rem)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
           We cordially invite you to the wedding celebration of
         </motion.p>
         
-        <motion.h1 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-red-accent)', fontSize: 'clamp(3rem, 8vw, 5rem)', lineHeight: '1', marginBottom: '0.5rem', textShadow: '2px 4px 10px rgba(0,0,0,0.3)' }}>
+        <motion.h1 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-red-accent)', fontSize: 'clamp(2.5rem, 6vw, 4rem)', lineHeight: '1', marginBottom: '0.5rem', textShadow: '2px 4px 10px rgba(0,0,0,0.3)' }}>
           Shaiwal Sachdev
         </motion.h1>
-        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', opacity: 0.9, marginBottom: '2rem', fontSize: '1.2rem' }}>
+        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', opacity: 0.9, marginBottom: '2rem', fontSize: 'clamp(0.9rem, 2.5vw, 1.2rem)' }}>
           (Son of Mrs. Seema Sachdev & Kamal Sachdev)
         </motion.p>
 
-        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: '2.5rem', margin: '1rem 0', opacity: 0.9 }}>
+        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(1.5rem, 4vw, 2.5rem)', margin: '1rem 0', opacity: 0.9 }}>
           With
         </motion.p>
 
-        <motion.h1 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-red-accent)', fontSize: 'clamp(3rem, 8vw, 5rem)', lineHeight: '1', marginBottom: '0.5rem', textShadow: '2px 4px 10px rgba(0,0,0,0.3)' }}>
+        <motion.h1 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-red-accent)', fontSize: 'clamp(2.5rem, 6vw, 4rem)', lineHeight: '1', marginBottom: '0.5rem', textShadow: '2px 4px 10px rgba(0,0,0,0.3)' }}>
           Shaila Manaktahla
         </motion.h1>
-        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', opacity: 0.9, marginBottom: '3rem', fontSize: '1.2rem' }}>
+        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', opacity: 0.9, marginBottom: '2rem', fontSize: 'clamp(0.9rem, 2.5vw, 1.2rem)' }}>
           (Daughter of Mrs. Mukta Manaktahla & Gurmeet Singh)
         </motion.p>
 
-        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-dark)', fontSize: '1.8rem', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1rem', fontWeight: 500 }}>
+        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(1.5rem, 4vw, 2rem)', margin: '1rem 0 0.5rem', opacity: 0.9 }}>
+          On
+        </motion.p>
+
+        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-dark)', fontSize: 'clamp(1.4rem, 4vw, 1.8rem)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1rem', fontWeight: 500 }}>
           10 December 2026
         </motion.p>
         
         <motion.div variants={fadeInUp} className="ornamental-divider" style={{ width: '100px', margin: '3rem auto 2rem', opacity: 0.3 }}></motion.div>
 
         {/* Details appended directly to the first page */}
+        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(1.5rem, 4vw, 2rem)', marginBottom: '0.5rem', opacity: 0.9 }}>
+          At
+        </motion.p>
         <motion.h3 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(2rem, 5vw, 3rem)', marginBottom: '1rem', textShadow: '2px 4px 10px rgba(0,0,0,0.1)' }}>
           Shri Anandpur Satsang Bhawan
         </motion.h3>
         <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontSize: '1.2rem', lineHeight: '1.8', opacity: 0.9, letterSpacing: '0.05em', marginBottom: '3rem' }}>
           9C, Block-A, Hind Nagar<br/>
           Near Komal Ice Cream<br/>
-          Opposite Kailash Palace<br/>
-          <strong style={{ fontSize: '1.6rem', letterSpacing: '0.2em', display: 'block', marginTop: '1rem', color: 'var(--color-text-accent)' }}>LUCKNOW</strong>
+          Opposite Kailash Palace, LDA Colony<br/>
+          <strong style={{ fontSize: '1.6rem', letterSpacing: '0.2em', display: 'block', marginTop: '1rem', color: 'var(--color-text-accent)' }}>LUCKNOW - 226012</strong>
         </motion.p>
 
         <motion.div variants={fadeInUp} style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', marginBottom: '4rem', padding: '0 1rem' }}>
@@ -154,7 +161,7 @@ export const Hero = () => {
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56987.9877977982!2d80.8202707486328!3d26.78426219999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c0f69b640d691%3A0x1a19f03d21bcf90f!2sShri%20Anandpur%20Satsang%20Aashram%20(Madhur%20Satsang%20Dham)!5e0!3m2!1sen!2sin!4v1788282861467!5m2!1sen!2sin" 
               width="100%" 
-              height="300" 
+              height="450" 
               style={{ border: 0 }} 
               allowFullScreen="" 
               loading="lazy" 
@@ -167,7 +174,7 @@ export const Hero = () => {
             <iframe 
               src="https://www.google.com/maps/embed?pb=!4v1689264177114!6m8!1m7!1sJAMQDG48jDNRO82Dv8m4ag!2m2!1d26.7843298!2d80.8964091!3f118.85!4f-3.4!5f0.7820865974627469" 
               width="100%" 
-              height="300" 
+              height="450" 
               style={{ border: 0 }} 
               allowFullScreen="" 
               loading="lazy" 
