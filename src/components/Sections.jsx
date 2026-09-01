@@ -64,45 +64,45 @@ export const Hero = () => {
           variants={fadeInUp}
           src="/new_logo.png" 
           alt="Shri Anandpur Dham Logo" 
-          style={{ width: '180px', height: 'auto', margin: '0 auto 2rem', display: 'block', filter: 'drop-shadow(0 5px 15px rgba(0,0,0,0.5)) brightness(1.2)' }} 
+          style={{ width: 'clamp(100px, 30vw, 150px)', height: 'auto', margin: '0 auto 1.5rem', display: 'block', filter: 'drop-shadow(0 5px 15px rgba(0,0,0,0.5)) brightness(1.2)' }} 
         />
         
-        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontSize: 'clamp(1.2rem, 4vw, 2rem)', letterSpacing: '0.05em', marginBottom: '2rem', fontWeight: 700, textAlign: 'center', width: '100%' }}>
+        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontSize: 'clamp(1rem, 3.5vw, 1.6rem)', letterSpacing: '0.05em', marginBottom: '1.5rem', fontWeight: 700, textAlign: 'center', width: '100%' }}>
           श्री सतगुरु देवाय नमः (S.S.D.N.)
         </motion.p>
         
-        <motion.div variants={fadeInUp} className="ornamental-divider" style={{ width: '150px', margin: '0 auto 2rem', opacity: 0.5 }}></motion.div>
+        <motion.div variants={fadeInUp} className="ornamental-divider" style={{ width: '100px', margin: '0 auto 1.5rem', opacity: 0.5 }}></motion.div>
 
-        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', marginBottom: '1rem', opacity: 0.9, fontSize: 'clamp(1rem, 3.5vw, 1.4rem)' }}>
+        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', marginBottom: '1rem', opacity: 0.9, fontSize: 'clamp(0.9rem, 3vw, 1.2rem)' }}>
           Seeking the divine grace and your blessings,
         </motion.p>
-        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', marginBottom: '3rem', opacity: 0.9, fontSize: 'clamp(0.9rem, 3vw, 1.2rem)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
-          We cordially invite you to the post wedding celebration of
+        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', marginBottom: '2.5rem', opacity: 0.9, fontSize: 'clamp(0.8rem, 2.5vw, 1.1rem)', letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+          We cordially invite you to the post wedding blessing ceremony of
         </motion.p>
         
-        <motion.h1 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-red-accent)', fontSize: 'clamp(2.5rem, 6vw, 4rem)', lineHeight: '1', marginBottom: '0.5rem', textShadow: '2px 4px 10px rgba(0,0,0,0.3)' }}>
+        <motion.h1 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-red-accent)', fontSize: 'clamp(2rem, 6vw, 3.5rem)', lineHeight: '1', marginBottom: '0.5rem', textShadow: '2px 4px 10px rgba(0,0,0,0.3)' }}>
           Shaiwal Sachdev
         </motion.h1>
-        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', opacity: 0.9, marginBottom: '2rem', fontSize: 'clamp(0.9rem, 2.5vw, 1.2rem)' }}>
+        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', opacity: 0.9, marginBottom: '1.5rem', fontSize: 'clamp(0.8rem, 2.5vw, 1.1rem)' }}>
           (Son of Mrs. Seema Sachdev & Kamal Sachdev)
         </motion.p>
 
-        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(1.5rem, 4vw, 2.5rem)', margin: '1rem 0', opacity: 0.9 }}>
+        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(1.2rem, 3.5vw, 2rem)', margin: '1rem 0', opacity: 0.9 }}>
           With
         </motion.p>
 
-        <motion.h1 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-red-accent)', fontSize: 'clamp(2.5rem, 6vw, 4rem)', lineHeight: '1', marginBottom: '0.5rem', textShadow: '2px 4px 10px rgba(0,0,0,0.3)' }}>
+        <motion.h1 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-red-accent)', fontSize: 'clamp(2rem, 6vw, 3.5rem)', lineHeight: '1', marginBottom: '0.5rem', textShadow: '2px 4px 10px rgba(0,0,0,0.3)' }}>
           Shaila Manaktahla
         </motion.h1>
-        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', opacity: 0.9, marginBottom: '2rem', fontSize: 'clamp(0.9rem, 2.5vw, 1.2rem)' }}>
+        <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontStyle: 'italic', opacity: 0.9, marginBottom: '1.5rem', fontSize: 'clamp(0.8rem, 2.5vw, 1.1rem)' }}>
           (Daughter of Mrs. Mukta Manaktahla & Gurmeet Singh)
         </motion.p>
 
-        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(1.5rem, 4vw, 2rem)', margin: '1rem 0 0.5rem', opacity: 0.9 }}>
+        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(1.2rem, 3.5vw, 1.8rem)', margin: '1rem 0 0.5rem', opacity: 0.9 }}>
           On
         </motion.p>
 
-        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-dark)', fontSize: 'clamp(1.4rem, 4vw, 1.8rem)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1rem', fontWeight: 500 }}>
+        <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-dark)', fontSize: 'clamp(1.1rem, 3.5vw, 1.6rem)', letterSpacing: '0.2em', textTransform: 'uppercase', marginBottom: '1rem', fontWeight: 500 }}>
           10 December 2026
         </motion.p>
         
@@ -206,8 +206,9 @@ export const Hero = () => {
           </div>
           
           <div style={{ borderTop: '1px solid rgba(212,175,55,0.3)', paddingTop: '1rem' }}>
-            <p style={{ fontSize: '1rem', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.2rem', fontWeight: 600, color: 'var(--color-text-dark)' }}>Contact</p>
-            <p style={{ fontSize: '1.1rem', opacity: 0.9, color: 'var(--color-text-dark)' }}>Kamal Sachdev: <strong style={{color: 'var(--color-red-accent)'}}>8052418822</strong></p>
+            <p style={{ fontSize: '1rem', letterSpacing: '0.1em', textTransform: 'uppercase', marginBottom: '0.4rem', fontWeight: 600, color: 'var(--color-text-dark)' }}>Contact</p>
+            <p style={{ fontSize: '1.1rem', opacity: 0.9, color: 'var(--color-text-dark)', marginBottom: '0.3rem' }}>Kamal Sachdev: <strong style={{color: 'var(--color-red-accent)'}}>8052418822</strong></p>
+            <p style={{ fontSize: '1.1rem', opacity: 0.9, color: 'var(--color-text-dark)' }}>Seema: <strong style={{color: 'var(--color-red-accent)'}}>8127956641</strong></p>
           </div>
         </motion.div>
 
