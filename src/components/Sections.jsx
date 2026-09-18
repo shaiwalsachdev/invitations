@@ -174,7 +174,7 @@ export const Hero = () => {
               <motion.p variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(0.85rem, 3.5vw, 1.1rem)', margin: 0, opacity: 0.9 }}>
                 At
               </motion.p>
-              <motion.h3 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(1rem, 4vw, 1.4rem)', margin: '0.1rem 0', textShadow: '1px 1px 2px rgba(0,0,0,0.1)' }}>
+              <motion.h3 variants={fadeInUp} className="font-serif" style={{ color: 'var(--color-text-accent)', fontSize: 'clamp(1rem, 4vw, 1.4rem)', margin: '0.1rem 0', textShadow: '1px 1px 2px rgba(0,0,0,0.1)', fontWeight: 'bold' }}>
                 Shri Anandpur Satsang Bhawan
               </motion.h3>
               <motion.p variants={fadeInUp} style={{ color: 'var(--color-text-dark)', fontSize: 'clamp(0.7rem, 3vw, 0.9rem)', lineHeight: '1.2', opacity: 0.9, margin: 0 }}>
